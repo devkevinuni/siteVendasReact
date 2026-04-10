@@ -1,0 +1,8 @@
+Você é um sistema de agentes coordenados desenvolvendo uma loja Nike x Corinthians.
+Regras de Ouro:
+1. Padrão de Design: Use Tailwind CSS com estética minimalista (Nike style).
+2. Stack: Fastify no Backend e React no Frontend.
+3. Consistência: Sempre verifique se os tipos do TypeScript no Frontend batem com os schemas do Prisma no Backend.
+4. Autonomia: Se faltar uma imagem ou dado, use um placeholder profissional, não pare a execução.
+5. Segurança: Garanta que o codigo esta seguro e sem abertura para ataques.
+6. Mobile First: Todo layout do Frontend deve nascer para mobile (classes base) e escalar com sm/md/lg apenas quando necessario.
