@@ -26,7 +26,7 @@ export const initialProducts = [
     categoria: 'Agasalho',
     preco: 329.9,
     estoque: 5,
-    imagem_url: 'https://placehold.co/400x400/f4f4f5/111827?text=Agasalho+Corinthians',
+    imagem_url: 'https://img.ltwebstatic.com/v4/j/spmp/2026/03/22/2a/1774191725d1a4bf5c76b82864cdf2875e73cd9271_thumbnail_405x.jpg',
   },
   {
     id: '4',
@@ -35,7 +35,7 @@ export const initialProducts = [
     categoria: 'Acessório',
     preco: 199.9,
     estoque: 12,
-    imagem_url: 'https://placehold.co/400x400/f4f4f5/111827?text=Mochila+Nike',
+    imagem_url: 'https://static.netshoes.com.br/produtos/mochila-de-costa-corinthians-c-bolso-termico-16421/10/NHS-236Y-010/NHS-236Y-010_zoom1.jpg?ts=1774118118&ims=1088x',
   },
   {
     id: '5',
@@ -44,16 +44,16 @@ export const initialProducts = [
     categoria: 'Calçado',
     preco: 369.9,
     estoque: 7,
-    imagem_url: 'https://placehold.co/400x400/f4f4f5/111827?text=Tenis+Nike',
+    imagem_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3gZUVaK2ZUbXG3WSY4a9hi1Js7FgPEWAAw&s',
   },
   {
     id: '6',
-    nome: 'Tênis de treino',
-    descricao: 'Tênis confortável para treino e uso diário.',
+    nome: 'exemplo de estoque zerado',
+    descricao: 'Descrição generica.',
     categoria: 'Calçado',
-    preco: 369.9,
-    estoque: 7,
-    imagem_url: 'https://placehold.co/400x400/f4f4f5/111827?text=Tenis+Nike',
+    preco: 314233231.9,
+    estoque: 0,
+    imagem_url: 'https://img-21.ccm2.net/ykELxwV3sjjT8a8aAhTBvuG0_8g=/500x/2341afa826a344f8ab4558b2df8347d8/ccm-faq/shutterstock_Oleksandr_Yuhlchek_2.jpg',
 },
 ]
 

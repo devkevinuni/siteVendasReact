@@ -115,9 +115,8 @@ export function ProductFilter({
               Categorias
               <ChevronDown
                 size={18}
-                className={`transition-transform ${
-                  expandedSections.categories ? 'rotate-0' : '-rotate-90'
-                }`}
+                className={`transition-transform ${expandedSections.categories ? 'rotate-0' : '-rotate-90'
+                  }`}
               />
             </button>
             {selectedCategories.length > 0 && (
@@ -166,9 +165,8 @@ export function ProductFilter({
               Preço
               <ChevronDown
                 size={18}
-                className={`transition-transform ${
-                  expandedSections.price ? 'rotate-0' : '-rotate-90'
-                }`}
+                className={`transition-transform ${expandedSections.price ? 'rotate-0' : '-rotate-90'
+                  }`}
               />
             </button>
             {(selectedPrice[0] !== 0 || selectedPrice[1] !== 10000) && (
@@ -219,9 +217,8 @@ export function ProductFilter({
               Disponibilidade
               <ChevronDown
                 size={18}
-                className={`transition-transform ${
-                  expandedSections.stock ? 'rotate-0' : '-rotate-90'
-                }`}
+                className={`transition-transform ${expandedSections.stock ? 'rotate-0' : '-rotate-90'
+                  }`}
               />
             </button>
             {inStock && (

@@ -29,7 +29,8 @@ export function ProductCard({ product }) {
         <h3 className="text-xl font-extrabold uppercase tracking-tight text-zinc-950">
           {product.nome}
         </h3>
-        <p className="min-h-10 text-sm text-zinc-600">{product.descricao}</p>
+        <p className="min-h-10 text-sm text-zinc-600">
+          {product.descricao}</p>
 
         <div className="flex items-center justify-between pt-2">
           <span className="text-base font-bold text-zinc-950">{brlFormatter.format(product.preco)}</span>
