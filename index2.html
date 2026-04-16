@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Scroll Snap Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Esconde a barra de scroll para um visual mais clean, se desejar */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="h-screen overflow-y-scroll snap-y snap-mandatory no-scrollbar">
+        
+        <section class="h-screen w-full snap-start bg-slate-900 flex flex-col items-center justify-center text-white p-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-4 uppercase tracking-tighter">Seção 01</h1>
+            <p class="text-lg text-slate-400">Role para baixo para ver o efeito de trava.</p>
+            <div class="mt-10 animate-bounce">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="Track 19 9l-7 7-7-7"></path></svg>
+            </div>
+        </section>
+
+        <section class="h-screen w-full snap-start bg-indigo-600 flex flex-col items-center justify-center text-white p-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-4 uppercase tracking-tighter">Seção 02</h1>
+            <p class="text-lg text-indigo-200">O scroll sempre para no topo desta seção.</p>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <div class="w-32 h-32 bg-white/10 rounded-xl backdrop-blur-md"></div>
+                <div class="w-32 h-32 bg-white/10 rounded-xl backdrop-blur-md"></div>
+            </div>
+        </section>
+
+        <section class="h-screen w-full snap-start bg-emerald-500 flex flex-col items-center justify-center text-white p-10">
+            <h1 class="text-5xl md:text-7xl font-black mb-4 uppercase tracking-tighter">Seção 03</h1>
+            <p class="text-lg text-emerald-100">Perfeito para Landing Pages de produtos.</p>
+            <button class="mt-8 px-8 py-3 bg-white text-emerald-600 font-bold rounded-full hover:bg-opacity-90 transition">
+                Começar Agora
+            </button>
+        </section>
+
+        <section class="h-screen w-full snap-start bg-cover bg-center relative flex items-center justify-center" 
+                 style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-black/60"></div>
+            
+            <div class="relative z-10 text-center text-white">
+                <h1 class="text-5xl md:text-7xl font-black mb-4">FIM</h1>
+                <p class="text-slate-300">Você chegou ao final do teste.</p>
+                <a href="#" onclick="document.querySelector('main').scrollTo({top: 0, behavior: 'smooth'})" class="mt-4 inline-block text-sm underline">Voltar ao topo</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

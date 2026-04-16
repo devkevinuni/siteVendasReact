@@ -17,7 +17,7 @@ export function ProductCard({ product }) {
           loading="lazy"
           decoding="async"
         />
-        <span className="absolute left-4 top-4 border border-zinc-950 bg-zinc-950 px-2 py-1 text-[11px] font-semibold uppercase tracking-widest text-white">
+        <span className="absolute left-4 top-4 border border-transparent bg-sky-950 px-2 py-1 text-[11px] font-semibold uppercase tracking-widest text-white">
           Lancamento
         </span>
       </div>
@@ -26,7 +26,7 @@ export function ProductCard({ product }) {
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-zinc-600">
           {product.categoria}
         </p>
-        <h3 className="text-xl font-extrabold uppercase tracking-tight text-zinc-950">
+        <h3 className="text-xl font-extrabold uppercase tracking-tight text-sky-950">
           {product.nome}
         </h3>
         <p className="min-h-10 text-sm text-zinc-600">
@@ -36,7 +36,7 @@ export function ProductCard({ product }) {
           <span className="text-base font-bold text-zinc-950">{brlFormatter.format(product.preco)}</span>
           <Link
             to={`/product/${product.id}`}
-            className="inline-flex items-center gap-2 border border-zinc-950 bg-zinc-950 px-3 py-2 text-xs font-semibold uppercase tracking-widest text-white transition hover:bg-white hover:text-zinc-950"
+            className="inline-flex items-center rounded-sm gap-2 border border-transparent bg-sky-950 px-3 py-2 text-xs font-semibold uppercase tracking-widest text-white transition hover:bg-sky-200 hover:text-zinc-950 hover:border-sky-200 focus:outline-none focus:ring-2 focus:ring-sky-950 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             aria-label={`Comprar ${product.nome}`}
           >
             Comprar

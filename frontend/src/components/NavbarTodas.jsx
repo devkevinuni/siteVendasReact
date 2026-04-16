@@ -6,7 +6,7 @@ export function NavbarTodas() {
       <div className="w-full max-w-7xl mx-auto">
         <div className="flex justify-between gap-8 items-center">
           <div>
-            <Link to="/" className="font-bold text-4xl"><span className="border-t-4 border-l-4 pl-2 border-black">Nike</span> x <span className="border-b-4 border-r-4 pr-2 border-black">Corinthians</span></Link>
+            <Link to="/" className="font-bold text-4xl"><img src="https://unilavras.edu.br/new_site/wp-content/uploads/2018/10/Logo-para-site-barra-de-menu-1.png" alt="Logo do Unilavras" /></Link>
           </div>
           <div className="flex items-center gap-8">
             <nav aria-label="Main Navigation" className="hidden lg:flex gap-8">

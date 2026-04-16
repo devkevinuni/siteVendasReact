@@ -87,7 +87,7 @@ export function ConteudoProductSelectionPage() {
                                 placeholder="Pesquise por produto, marca, categoria..."
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.currentTarget.value)}
-                                className="w-full border border-zinc-300 bg-white px-4 py-3 pl-10 pr-12 text-sm placeholder-zinc-500 focus:border-zinc-950 focus:outline-none transition"
+                                className="w-full border border-zinc-400 bg-white px-4 py-3 pl-10 pr-12 text-sm placeholder-zinc-500 focus:border-zinc-950 focus:outline-none transition"
                                 aria-label="Pesquisar produtos"
                             />
                             <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none" />
@@ -147,7 +147,7 @@ export function ConteudoProductSelectionPage() {
                         {/* Results Header */}
                         <div className="mb-6 flex items-center justify-between">
                             <div>
-                                <h1 className="text-2xl font-black uppercase tracking-tight sm:text-3xl">
+                                <h1 className="text-2xl font-black text-sky-800 uppercase tracking-tight sm:text-3xl">
                                     Produtos
                                 </h1>
                                 <p className="mt-1 text-xs font-semibold uppercase tracking-widest text-zinc-600">

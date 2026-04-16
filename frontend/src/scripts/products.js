@@ -1,50 +1,58 @@
-const STORAGE_KEY = 'nike_products'
+import shirtImage from "../assets/images/imgHero.jpg";
+import shirtImage2 from "../assets/images/camisaAdm.jpg";
+import shirtImage3 from "../assets/images/camisaEdFisica.jpg";
+import shirtImage4 from "../assets/images/camisaEnfermagem.jpg";
+import shirtImage5 from "../assets/images/garrafa.jpg";
+import shirtImage6 from "../assets/images/caneca.jpg";
+import shirtImage7 from "../assets/images/imgFim.jpg";
+
+const STORAGE_KEY = 'uni_products'
 
 export const initialProducts = [
   {
     id: '1',
-    nome: 'Camisa Corinthians 24/25',
-    descricao: 'Camisa oficial Nike Corinthians, leve, respirável e moderna.',
-    categoria: 'Uniforme',
-    preco: 249.9,
+    nome: 'Camisa Faço Administração',
+    descricao: 'Camisa oficial do curso de Administração da Unilavras, feita com tecido leve e respirável.',
+    categoria: 'Camisa',
+    preco: 180.0,
     estoque: 8,
-    imagem_url: 'https://static.netshoes.com.br/produtos/camisa-nike-corinthians-i-202526-torcedora-pro-feminina/28/SGL-0181-028/SGL-0181-028_zoom1.jpg?ts=1773313237&ims=1088x1088',
+    imagem_url: shirtImage2,
   },
   {
     id: '2',
-    nome: 'Boné Nike Corinthians',
-    descricao: 'Boné esportivo com logo oficial do Corinthians.',
-    categoria: 'Acessório',
-    preco: 89.9,
+    nome: 'Camisa Faço Educação Física',
+    descricao: 'Camisa oficial do curso de Educação Física da Unilavras, feita com tecido leve e respirável.',
+    categoria: 'Camisa',
+    preco: 180.0,
     estoque: 14,
-    imagem_url: 'https://m.media-amazon.com/images/I/41Aja8JgrQL._AC_SX522_.jpg',
+    imagem_url: shirtImage3,
   },
   {
     id: '3',
-    nome: 'Agasalho Corinthians',
-    descricao: 'Agasalho térmico Nike ideal para dias frios.',
-    categoria: 'Agasalho',
-    preco: 329.9,
-    estoque: 5,
-    imagem_url: 'https://img.ltwebstatic.com/v4/j/spmp/2026/03/22/2a/1774191725d1a4bf5c76b82864cdf2875e73cd9271_thumbnail_405x.jpg',
+    nome: 'Camisa Faço Engenharia Elétrica',
+    descricao: 'Camisa oficial do curso de Engenharia Elétrica da Unilavras, feita com tecido leve e respirável.',
+    categoria: 'Camisa',
+    preco: 180.0,
+    estoque: 10,
+    imagem_url: shirtImage4,
   },
   {
     id: '4',
-    nome: 'Mochila Nike',
-    descricao: 'Mochila esportiva com compartimentos para treino e viagem.',
-    categoria: 'Acessório',
-    preco: 199.9,
+    nome: 'Garrafa de água esportiva',
+    descricao: 'Garrafa de água esportiva com isolamento térmico, perfeita para manter suas bebidas frescas durante os treinos.',
+    categoria: 'Garrafa',
+    preco: 49.9,
     estoque: 12,
-    imagem_url: 'https://static.netshoes.com.br/produtos/mochila-de-costa-corinthians-c-bolso-termico-16421/10/NHS-236Y-010/NHS-236Y-010_zoom1.jpg?ts=1774118118&ims=1088x',
+    imagem_url: shirtImage5,
   },
   {
     id: '5',
-    nome: 'Tênis de treino',
-    descricao: 'Tênis confortável para treino e uso diário.',
-    categoria: 'Calçado',
+    nome: 'Caneca de cerâmica personalizada',
+    descricao: 'Caneca de cerâmica com design personalizado, perfeita para uso diário.',
+    categoria: 'Caneca',
     preco: 369.9,
     estoque: 7,
-    imagem_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3gZUVaK2ZUbXG3WSY4a9hi1Js7FgPEWAAw&s',
+    imagem_url: shirtImage6,
   },
   {
     id: '6',
@@ -53,7 +61,7 @@ export const initialProducts = [
     categoria: 'Calçado',
     preco: 314233231.9,
     estoque: 0,
-    imagem_url: 'https://img-21.ccm2.net/ykELxwV3sjjT8a8aAhTBvuG0_8g=/500x/2341afa826a344f8ab4558b2df8347d8/ccm-faq/shutterstock_Oleksandr_Yuhlchek_2.jpg',
+    imagem_url: shirtImage7,
 },
 ]
 
